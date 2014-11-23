@@ -35,63 +35,59 @@
           <h3 class="panel-title">経験値計算くん</h3>
         </div>
         <div class="panel-body">
-              <label for="expunit">必要経験値</label>
-          <form class="form-inline" role="form">
-            <div class="form-group">
-              <select class="form-control expsel" name="expunit" id="expunit">
-              <option>ユニット系統</option>
-              <option value="0">主人公（No.01～12）</option>
-              <option value="1">洋名1（No.13～52）</option>
-              <option value="2">洋名2（No.53～92）</option>
-              <option value="3">和名（No.93～132）</option>
-              <option value="4">勇者/英雄/銃士/賢者</option>
-              <option value="5">亡霊</option>
-              <option value="6">遺跡/孤高/海竜/帝国</option>
-              <option value="7">ひらがな亜人</option>
-              <option value="8">王</option>
-              <option value="9">神王将</option>
-              </select>
-              <select class="form-control expsel" name="exprarity" id="exprarity">
-              <option>レアリティ</option>
-              <option value="0">★3</option>
-              <option value="1">★4</option>
-              <option value="2">★5</option>
-              <option value="3">★6</option>
-              </select>
-            </div>
-          </form>
           <form role="form">
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" id="chkinput"> 経験値を直接入力
-                </label>
+            <div class="form-group row">
+              <div class="col-xs-7">
+                <select class="form-control expsel" name="expunit" id="expunit">
+                <option>ユニット系統</option>
+                <option value="0">主人公（No.01～12）</option>
+                <option value="1">洋名1（No.13～52）</option>
+                <option value="2">洋名2（No.53～92）</option>
+                <option value="3">和名（No.93～132）</option>
+                <option value="4">勇者/英雄/銃士/賢者</option>
+                <option value="5">亡霊</option>
+                <option value="6">遺跡/孤高/海竜/帝国</option>
+                <option value="7">ひらがな亜人</option>
+                <option value="8">王</option>
+                <option value="9">神王将</option>
+                </select>
               </div>
-              <input type="tel" class="form-control expcalc" name="expneed" id="expneed" placeholder="必要経験値" readonly>
+              <div class="col-xs-5">
+                <select class="form-control expsel" name="exprarity" id="exprarity">
+                <option>レア度</option>
+                <option value="0">★3</option>
+                <option value="1">★4</option>
+                <option value="2">★5</option>
+                <option value="3">★6</option>
+                </select>
+              </div>
+              <div class="col-xs-12">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="chkinput"> 経験値を直接入力
+                  </label>
+                </div>
+                <input type="tel" class="form-control expcalc" name="expneed" id="expneed" placeholder="必要経験値" readonly>
+              </div>
             </div>
-          </form>
-          <form role="form">
             <div class="form-group">
-              <label for="expcurrent">現在経験値</label>
               <input type="tel" class="form-control expcalc" name="expcurrent" id="expcurrent" placeholder="現在の経験値を入力">
             </div>
             <div class="form-group">
               <p class="text-center"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></p>
             </div>
-            <div class="form-group row">
-              <div class="col-xs-6">
+              <div class="form-group">
                 <div class="input-group">
-                  <div class="input-group-addon">あと</div>
+                  <div class="input-group-addon">不足経験値</div>
                     <input type="text" class="form-control" name="expresult" id="expresult" readonly>
                 </div>
               </div>
-              <div class="col-xs-6">
+              <div class="form-group">
                 <div class="input-group">
-                  <div class="input-group-addon">大成功</div>
+                  <div class="input-group-addon">大成功だと</div>
                     <input type="text" class="form-control" name="expresultsp" id="expresultsp" readonly>
                 </div>
               </div>
-            </div>
           </form>
         </div>
       </div><!-- //panel -->
