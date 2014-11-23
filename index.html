@@ -28,11 +28,35 @@
       </div>
     </nav><!-- //navbar -->
 
+
+
     <!-- main -->
     <div class="container" role="main">
+
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">使い方</h4>
+            </div>
+            <div class="modal-body">
+<ol>
+<li>緑の項目に入力すると、不足経験値が表示されます</li>
+<li>「経験値を直接入力」にチェックを入れれば、手入力もできます</li>
+<li>大成功の場合は値を1.5で割ってるだけです</li>
+</ol>
+
+            </div>
+        </div>
+    </div>
+</div>
+
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">最大レベルまでの不足経験値計算</h3>
+          <h3 class="panel-title">最大レベルまでの不足経験値  <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="modal" data-target="#myModal"></span></h3>
+  
+
         </div>
         <div class="panel-body">
           <form role="form">
@@ -64,7 +88,7 @@
               <div class="col-xs-12">
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" id="chkinput"> 必要経験値を直接入力
+                    <input type="checkbox" id="chkinput"> 経験値を直接入力
                   </label>
                 </div>
                 <input type="tel" class="form-control expcalc" name="expneed" id="expneed" placeholder="必要経験値" readonly>
@@ -92,9 +116,9 @@
         </div>
       </div><!-- //panel -->
 
-      <div class="panel panel-info">
+      <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">よりしろ経験値</h3>
+          <h3 class="panel-title">よりしろ経験値メモ</h3>
         </div>
         <div class="panel-body">
           <table class="table table-striped">
