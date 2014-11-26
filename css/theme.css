@@ -4,7 +4,6 @@ html {
 }
 body {
   margin-bottom: 60px;
-  padding-top: 70px;
   padding-bottom: 30px;
 }
 .footer {
@@ -17,4 +16,30 @@ body {
 }
 .form-control{
 	background-color:#dff0d8;
+}
+.tab-pane{
+	padding-top:15px;
+}
+h1{
+	font-size:24px;
+}
+h2{
+	font-size:18px;
+}
+h3{
+	font-size:16px;
+}
+h4{
+	font-size:14px;
+}
+h1:not(.panel-title),h2:not(.panel-title),h3:not(.panel-title),h4:not(.panel-title){
+	font-weight:bold;
+	margin-top:10px;
+	margin-bottom: 6px;
+}
+ul,dl{
+	margin-left:10px;
+}
+dd{
+	margin-left:5px;
 }
