@@ -40,10 +40,4 @@ h4:not(.panel-title){
 	margin-top:10px;
 	margin-bottom: 6px;
 }
-.panel ul,
-.panel dl{
-	margin-left:10px;
-}
-.panel dd{
-	margin-left:5px;
-}
+
