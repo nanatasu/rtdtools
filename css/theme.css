@@ -32,14 +32,18 @@ h3{
 h4{
 	font-size:14px;
 }
-h1:not(.panel-title),h2:not(.panel-title),h3:not(.panel-title),h4:not(.panel-title){
+h1:not(.panel-title),
+h2:not(.panel-title),
+h3:not(.panel-title),
+h4:not(.panel-title){
 	font-weight:bold;
 	margin-top:10px;
 	margin-bottom: 6px;
 }
-ul,dl{
+.panel ul,
+.panel dl{
 	margin-left:10px;
 }
-dd{
+.panel dd{
 	margin-left:5px;
 }
