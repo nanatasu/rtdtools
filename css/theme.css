@@ -40,8 +40,7 @@ h4:not(.panel-title){
 	margin-top:10px;
 	margin-bottom: 6px;
 }
-.panel dd,
-.panel dt{
+.panel dd{
 	padding-bottom:0.3em;
 }
 
